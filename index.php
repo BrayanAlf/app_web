@@ -1,12 +1,12 @@
 <?php
 // Conexión a la base de datos de Azure
 $host = 'servidorbdpaas.database.windows.net';
-$db   = 'empresa';
+$db   = 'BDSQLPaaS';
 $user = 'azureusersql';
 $pass = 'Azureuser-sql1';
 $charset = 'utf8mb4';
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$dsn = "sqlsrv:Server=$server;Database=$database";
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
