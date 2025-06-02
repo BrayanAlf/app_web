@@ -1,10 +1,9 @@
 <?php
 // Conexión a la base de datos de Azure
-$host = 'servidorbdpaas.database.windows.net';
-$db   = 'BDSQLPaaS';
-$user = 'azureusersql';
-$pass = 'Azureuser-sql1';
-$charset = 'utf8mb4';
+$server   = 'tcp:servidorbdpaas.database.windows.net,1433';
+$database = 'BDSQLPaaS';
+$user     = 'azureusersql';
+$pass     = 'Azureuser-sql1';
 
 $dsn = "sqlsrv:Server=$server;Database=$database";
 $options = [
